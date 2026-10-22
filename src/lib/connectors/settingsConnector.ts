@@ -1,4 +1,5 @@
-import { BaseConnector, ApiResponse } from './baseConnector';
+import { BaseConnector } from './baseConnector';
+import type { ApiResponse } from './baseConnector';
 
 export interface UserSettings {
   theme?: 'light' | 'dark';
