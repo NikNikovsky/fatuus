@@ -44,6 +44,11 @@ const shutdownPlugin = {
 export default defineConfig({
   plugins: [svelte(), shutdownPlugin],
   base: "/fatuus/",
+  build: {
+    rolldownOptions: {
+      external: ['react-native-fs']
+    }
+  },
   define: {
     __GIT_HASH__: JSON.stringify(gitHash)
   }
